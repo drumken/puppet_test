@@ -17,6 +17,9 @@
     package {'htop':
     ensure => present,
   }
+    package {'atop':
+    ensure => present,
+  }
  }
 
  node "puppet-agent1" {
