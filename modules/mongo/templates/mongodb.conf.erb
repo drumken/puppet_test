@@ -3,4 +3,7 @@ logpath=<%= logpath %>
 logappend=<%= appendlogs %>
 bind_ip = <%= ip %>
 port = <%= port %>
-
+<% if replset != "" %>
+replSet = <%= replset %>
+keyFile = etc/mongo.key
+<% end %>
